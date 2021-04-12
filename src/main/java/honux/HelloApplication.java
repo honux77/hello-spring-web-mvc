@@ -8,6 +8,7 @@ public class HelloApplication {
 
     public static void main(String[] args) {
         logger.info("Hello App started..");
-        System.out.println("Hello world");
+        Driver driver = new Driver();
+        driver.drive();
     }
 }
