@@ -2,7 +2,6 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="tire" class="honux.KoreaTire"></bean>
-    <bean id="michelinTire" class="honux.MichelinTire"></bean>
+    <bean id="tire" class="honux.MichelinTire"></bean>
     <bean id="car" class="honux.Car"></bean>
 </beans>

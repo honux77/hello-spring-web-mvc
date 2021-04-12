@@ -11,10 +11,9 @@ public class HelloApplication {
     public static void main(String[] args) {
         logger.info("Hello App started..");
         ApplicationContext ctx = new ClassPathXmlApplicationContext("/config.xml", HelloApplication.class);
-        Tire mt = (Tire) ctx.getBean("michelinTire", MichelinTire.class);
+        Tire tire = (Tire) ctx.getBean("tire", Tire.class);
         Car car = (Car) ctx.getBean("car", Car.class);
-        car.setTire(mt);
+        car.setTire(tire);
         System.out.println(car.run());
-
     }
 }
