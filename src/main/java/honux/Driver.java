@@ -2,7 +2,8 @@ package honux;
 
 public class Driver {
     public void drive() {
-        Car car = new Car();
+        KoreaTire kt = new KoreaTire();
+        Car car = new Car(kt);
         System.out.println(car.run());
     }
 }

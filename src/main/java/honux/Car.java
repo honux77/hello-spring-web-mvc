@@ -3,8 +3,8 @@ package honux;
 public class Car {
     private Tire tire;
 
-    public Car() {
-        this.tire = new KoreaTire();
+    public Car(Tire t) {
+        this.tire = t;
     }
 
     public String run() {
