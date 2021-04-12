@@ -1,11 +1,10 @@
 package honux;
 
-public class Car {
-    private Tire tire;
+import org.springframework.beans.factory.annotation.Autowired;
 
-    public void setTire(Tire t) {
-        this.tire = t;
-    }
+public class Car {
+    @Autowired
+    private Tire tire;
 
     public String run() {
         return tire.getBrand() + "로 씽씽 달림";
