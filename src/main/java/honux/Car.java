@@ -3,7 +3,7 @@ package honux;
 public class Car {
     private Tire tire;
 
-    public Car(Tire t) {
+    public void setTire(Tire t) {
         this.tire = t;
     }
 
