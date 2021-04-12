@@ -1,9 +1,9 @@
 package honux;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import javax.annotation.Resource;
 
 public class Car {
-    @Autowired
+    @Resource
     private Tire tire;
 
     public String run() {
